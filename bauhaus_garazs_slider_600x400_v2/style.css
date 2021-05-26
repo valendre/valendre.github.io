@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0px;
+	margin: 0px;
+}
+
+/* Div layer for the entire banner. *******************************************************************  */
+#container_dc, #content_dc, .def {
+	width: 600px;
+	height: 400px;
+}
+#container_dc {
+	position: absolute;
+	background: #ffffff;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#content_dc {
+	position: absolute;
+	background-color: #ffffff;
+	z-index: 1;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+/* BANNER STYLE */
+
+#bg {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #ffffff;
+    background-size: 100% 100%;
+    background-position: center center;
+	width: 100%;
+	height: 100%;
+}
+
+.def {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    background-size: 100% 100%;
+    background-position: center center;
+	opacity:0;
+}
+
+#img1_outer {
+	left:36px;
+	overflow: hidden;
+}
+#img1 {
+	left:-36px;
+	background-image: URL('img/img1.jpg');
+}
+#img2 {
+	background-image: URL('img/img2.jpg');
+}
+#text2 {
+	background-image: URL('img/text2.png');
+}
+#text3 {
+	background-image: URL('img/text3.png');
+}
+#logo_small {
+	background-image: URL('img/logo_small.svg');
+}
+#logo {
+	background-image: URL('img/logo.svg');
+}
+#slider {
+	background-image: URL('img/slider.png');
+}
+#white {
+	background-color: #ffffff;
+}
+
+.opacity0 {
+	opacity: 0;
+}

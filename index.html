@@ -1,12 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prezi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+        font-family: "Rubik", sans-serif;
+      }
+
+      nav,
+      footer {
+        position: fixed;
+        z-index: 100;
+        height: 90px;
+        width: 100%;
+        top: 0;
+        background-color: #3d3d3d;
+      }
+
+      nav {
+        top: 0;
+      }
+
+      footer {
+        top: calc(100vh - 90px);
+      }
+
+      object {
+        border-radius: 10px;
+        background: #e0e0e0;
+        box-shadow: 10px 10px 20px #9f9f9f, -10px -10px 20px #ffffff;
+        border: 4px solid #e0e0e0;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #3d3d3d;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #e0e0e0;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .banner_container {
+        display: flex;
+      }
+      .copy {
+        padding: 0 40px;
+        text-align: left;
+
+        flex: 1;
+      }
+      .banner {
+        padding: 0 40px;
+        text-align: left;
+        flex: 1;
+      }
+
+      #menu_checkbox {
+        display: none;
+      }
+      section {
+        position: absolute;
+        z-index: 100;
+        height: calc(100vh - 180px);
+        color: white;
+        top: 65px;
+        transition: 0.6s;
+        background: black;
+        overflow: hidden;
+        left: -440px;
+        width: 400px;
+      }
+      label {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        display: block;
+        width: 40px;
+        height: 40px;
+        margin: -20px auto 0 40px;
+        cursor: pointer;
+      }
+
+      label div {
+        position: relative;
+        top: 0;
+        height: 8px;
+        background-color: #fff;
+        margin-bottom: 8px;
+        transition: 0.3s;
+        border-radius: 4px;
+      }
+
+      label div:first-child {
+        transform-origin: 0;
+      }
+
+      label div:nth-child(3) {
+        margin-bottom: 0;
+        transform-origin: 40px;
+      }
+
+      label div:nth-child(2) {
+        right: 0;
+        width: 40px;
+      }
+
+      #menu_checkbox:checked + label div:first-child {
+        top: -4px;
+        transform: rotateZ(45deg);
+      }
+
+      #menu_checkbox:checked + label div:nth-child(3) {
+        top: 4px;
+        transform: rotateZ(45deg);
+      }
+
+      #menu_checkbox:checked + label div:nth-child(2) {
+        width: 56.667px;
+        top: 0;
+        right: 8.667px;
+        transform: rotateZ(-45deg);
+      }
+
+      #menu_checkbox + label section:last-child {
+        left: -440px;
+      }
+
+      #menu_checkbox:checked + label section:last-child {
+        left: -40px;
+      }
+
+      section li {
+        font-size: 20px;
+        display: block;
+        padding: 0 40px;
+        margin-top: 20px;
+      }
+
+      section ul {
+        display: block;
+        padding: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <input type="checkbox" id="menu_checkbox" />
+      <label for="menu_checkbox">
+        <div></div>
+        <div></div>
+        <div></div>
+        <section>
+          <ul>
+            <li onclick="swiper.slideTo(0, 1000);">Samsung Pillanatok</li>
+            <li onclick="swiper.slideTo(1, 1000);">Advil</li>
+            <li onclick="swiper.slideTo(2, 1000);">Bauhaus</li>
+            <li onclick="swiper.slideTo(3, 1000);">Samsung Neo QLED 8K</li>
+            <li onclick="swiper.slideTo(4, 1000);">Pampers</li>
+          </ul>
+        </section>
+      </label>
+    </nav>
+    <div class="swiper-container mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="banner_container">
+            <div class="copy">
+              <h2>Samsung<br />Pillanatok</h2>
+              <p>600x600px<br />143kb</p>
+            </div>
+            <div id="banner0" class="banner">
+              <object
+                type="text/html"
+                data="Pillanatok_KV_banners600x600_v0/index.html"
+                width="600px"
+                height="600px"
+              ></object>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="banner_container">
+            <div class="copy">
+              <h2>Advil</h2>
+              <p>336x280px<br />250kb</p>
+            </div>
+            <div id="banner1" class="banner">
+              <object
+                type="text/html"
+                data="Migren_336x280_v2/index.html"
+                width="336px"
+                height="280px"
+              ></object>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="banner_container">
+            <div class="copy">
+              <h2>Bauhaus</h2>
+              <p>640x360px<br />155kb<br />slider</p>
+            </div>
+            <div id="banner2" class="banner">
+              <object
+                type="text/html"
+                data="bauhaus_garazs_slider_600x400_v2/index.html"
+                width="600px"
+                height="400px"
+              ></object>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="banner_container">
+            <div class="copy">
+              <h2>Samsung<br />Neo QLED 8K</h2>
+              <p>640x360px<br />92kb<br />slider</p>
+            </div>
+            <div id="banner3" class="banner">
+              <object
+                type="text/html"
+                data="SAM_NeoQled_Sci-Fi_640x360_v06/index.html"
+                width="640px"
+                height="360px"
+              ></object>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="banner_container">
+            <div class="copy">
+              <h2>Pampers</h2>
+              <p>160x600px</p>
+            </div>
+            <div id="banner4" class="banner">
+              <object
+                type="text/html"
+                data="Pampers_POX_160x600_v1/Pampers_POX_Emotional_static_anim_160x600.html"
+                width="160px"
+                height="600px"
+              ></object>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        direction: "vertical",
+        keyboard: {
+          enabled: true,
+        },
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      swiper.on("transitionEnd", function () {
+        newSlide(swiper.realIndex);
+      });
+
+      function newSlide(number) {
+        switch (number) {
+          case 0:
+            document.getElementById("banner0").innerHTML =
+              '<object type="text/html" data="Pillanatok_KV_banners600x600_v0/index.html" width="600px" height="600px"></object>';
+            break;
+          case 1:
+            document.getElementById("banner1").innerHTML =
+              '<object type="text/html" data="Migren_336x280_v2/index.html" width="336px" height="280px"></object>';
+
+            break;
+          case 2:
+            document.getElementById("banner2").innerHTML =
+              '<object type="text/html" data="bauhaus_garazs_slider_600x400_v2/index.html" width="600px" height="400px"></object>';
+            break;
+
+          case 3:
+            document.getElementById("banner3").innerHTML =
+              '<object type="text/html" data="SAM_NeoQled_Sci-Fi_640x360_v06/index.html"width="640px" height="360px"></object>';
+            break;
+
+            case 4:
+            document.getElementById("banner4").innerHTML =
+              '<object type="text/html" data="Pampers_POX_160x600_v1/Pampers_POX_Emotional_static_anim_160x600.html"width="160px" height="600px"></object>';
+            break;
+        }
+      }
+    </script>
+  </body>
+  <footer></footer>
 </html>

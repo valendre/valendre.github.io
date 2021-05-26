@@ -1,0 +1,155 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Default style, feel free to remove if not needed. */
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* Div layer for the entire banner. *******************************************************************  */
+#container_dc {
+	position: absolute;
+	width: 336px;
+	height: 280px;
+	background: #ffffff;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#content_dc {
+	position: absolute;
+	width: 336px;
+	height: 280px;
+	background-color: #fff;
+	z-index: 1;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+
+/* BANNER STYLE */
+
+.def {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    background-size: 100% 100%;
+    background-position: center center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+
+#bg {
+	background: URL('img/bg.jpg');
+}
+#img1 {
+	background: URL('img/img1.jpg');
+	height: 400px;
+}
+#img2 {
+	background: URL('img/img2.jpg');
+	height: 400px;
+}
+#text1 {
+	background: URL('img/text1.png');
+}
+#text2 {
+	background: URL('img/text2.png');
+}
+#text3 {
+	background: URL('img/text3.png');
+}
+#text4 {
+	background: URL('img/text4.png');
+}
+#text5 {
+	background: URL('img/text5.png');
+}
+#text6 {
+	background: URL('img/text6.png');
+}
+#cta {
+	background: URL('img/cta.png');
+}
+#kockazat {
+	background: URL('img/kockazat.png');
+}
+#legal {
+	background: URL('img/legal.png');
+}
+#logo {
+	background: URL('img/logo.png');
+}
+#logo_small {
+	background: URL('img/logo_small.png');
+}
+#pack {
+	background: URL('img/pack.png');
+}
+#pill {
+	background: URL('img/pill.png');
+}
+
+#yellowbg {
+	background: URL('img/yellow_bg.jpg');
+}
+#yellowcirclestart {
+	background: URL('img/yellow_circle_start.png');
+}
+#yellowcircleend {
+	background: URL('img/yellow_circle_start.png');
+}
+#yellowcircle1 {
+	left:0px;
+	margin-top: 140px;
+	height: 168px;
+	width:336px;
+	overflow: hidden;
+}
+#yellowcircle2 {
+	top: -168px;
+	height: 168px;
+	width: 336px;
+	overflow: hidden;
+}
+#yellowcircle3 {
+	height: 336px;
+	width: 336px;
+	background: URL('img/yellow_circle.png');
+}
+
+#yellowcircle4 {
+	left: 0px;
+	top: -28px;
+	height: 168px;
+	width: 336px;
+	overflow: hidden;
+}
+#yellowcircle5 {
+	top: 168px;
+	height: 168px;
+	width: 336px;
+	overflow: hidden;
+}
+#yellowcircle6 {
+	top:-168px;
+	height: 336px;
+	background: URL('img/yellow_circle.png');
+}

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+body, body * {
+	vertical-align: baseline;
+	border: 0 none;
+	outline: 0;
+	padding: 0px;
+	margin: 0px;
+}
+
+#container_dc, #content_dc, .def {
+	width: 640px;
+	height: 360px;
+}
+#container_dc {
+	position: absolute;
+	background: #ffffff;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#content_dc {
+	position: absolute;
+	background-color: #ffffff;
+	z-index: 1;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+:focus {
+    outline: none;
+}
+
+::-moz-focus-inner {
+    border: 0;
+}
+
+#bg {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background-color: #ffffff;
+    background-size: 100% 100%;
+    background-position: center center;
+	width: 100%;
+	height: 100%;
+}
+
+.def {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+    background-size: 100% 100%;
+    background-position: center center;
+	opacity:0;
+}
+
+#img2_outer, #slider_outer {
+	width: 640px;
+	overflow: hidden;
+}
+#img1 {
+	background-image: URL('img/img1.jpg');
+}
+#img2 {
+	background-image: URL('img/img2.jpg');
+}
+
+#slider {
+	top: 278px;
+	width: 31px;
+	height: 31px;
+	background-image: URL('img/slider.png');
+	position:absolute;
+	cursor:move;
+	opacity: 1;
+	z-index: 3;
+}
+
+#slider_line{
+	left: -1px;
+	display: block;
+	position: absolute;
+	width: 2px;
+	background-color: #ffffff;
+	height: 360px;
+	opacity: 1;
+	z-index: 2;
+}
+
+#info_box {
+	background-color: rgba(0,0,0,0.7);
+}
+
+.img {
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 100% 100%;
+}
+#legal {
+  background-image: url(img/legal.png);
+
+  left: 15px;
+  top: 342px;
+  width: 276px;
+  height: 10px;
+}
+
+#cta {
+  background-image: url(img/cta.png);
+
+  left: 13px;
+  top: 239px;
+  width: 112px;
+  height: 31px;
+}
+
+#logo {
+  background-image: url(img/logo.png);
+  left: 523px;
+  top: 7px;
+  width: 103px;
+  height: 16px;
+}
+
+#text {
+  background-image: url(img/text.png);
+  left: 15px;
+  top: 70px;
+  width: 279px;
+  height: 56px;
+}
+
+#type {
+  background-image: url(img/type.png);
+  left: 351px;
+  top: 237px;
+  width: 127px;
+  height: 17px;
+}
+
+#hl {
+  background-image: url(img/hl.png);
+  left: 15px;
+  top: 157px;
+  width: 282px;
+  height: 58px;
+}
+
+#slider_outer {
+	width: 640px;
+	left: 0px;
+	position:relative;
+	height: 360px;
+	opacity: 1;
+	overflow: hidden;
+}

@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+body, body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0px;
+  margin: 0px;
+}
+
+#container_dc, #content_dc {
+  background-color: #ffffff;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+#container_dc {
+  top: 0px;
+  left: 0px;
+  margin: auto;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#content_dc {
+  z-index: 1;
+  visibility: hidden;
+}
+
+:focus {
+  outline: none;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+#bg {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #1c1c1c;
+  width: 100%;
+  height: 100%;
+}
+
+.phones {
+  background-size: 2524px 207px;
+  width: 2524px;
+  height: 207px;
+  transform: rotateZ(-18deg);
+  background-color: #1c1c1c;
+  position: absolute;
+  font-size:0;
+}
+
+#phones0, #phones2, #phones3, #phones4, #phones6, #phones7 {
+  background-image: URL('img/phones2.jpg');
+}
+
+#phones1, #phones5 {
+  background-image: URL('img/phones.jpg');
+}

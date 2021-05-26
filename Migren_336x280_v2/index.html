@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HTML5 Standard Banner: 336x280</title>
+  <meta name="ad.size" content="width=336,height=280">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <script>
+    var parsed = (document.location.href.split('#')[1] || '').split('&');
+    var params = parsed.reduce(function(params, param) {
+      var param = param.split('=');
+      params[param[0]] = decodeURIComponent(param.slice(1).join('='));
+      return params;
+    }, {});
+  </script>
+
+    <div id="container_dc">
+      <div id="content_dc" class="clicktrough">
+        <div id="img1" class="def"></div>
+        <div id="img2" class="def"></div>
+        <div id="text1" class="def"></div>
+        <div id="text2" class="def"></div>
+        <div id="yellowbg" class="def"></div>
+        <div id="yellowcircle1" class="def">
+          <div id="yellowcircle2" class="def">
+            <div id="yellowcircle3" class="def"></div>
+          </div>
+        </div>
+        <div id="yellowcirclestart" class="def"></div>
+        <div id="yellowcircle4" class="def">
+          <div id="yellowcircle5" class="def">
+            <div id="yellowcircle6" class="def"></div>
+          </div>
+        </div>
+        <div id="yellowcircleend" class="def"></div>
+        <div id="text6" class="def"></div>
+        <div id="pill" class="def"></div>
+        <div id="bg" class="def"></div>
+        <div id="text3" class="def"></div>
+        <div id="text4" class="def"></div>
+        <div id="pack" class="def"></div>
+        <div id="logo" class="def"></div>
+        <div id="logo_small" class="def"></div>
+        <div id="kockazat" class="def"></div>
+        <div id="cta" class="def"></div>
+        <div id="text5" class="def"></div>
+        <div id="legal" class="def"></div>
+      </div>
+    </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenmax_1.20.4_3dc5474a75410cb768741e402b80d908_min.js"></script>
+  <script src="main.js" type="text/javascript"></script>
+
+  <script>
+    var creativeLink = document.getElementById('creativelink');
+    creativeLink.href = params.clickTag;
+  </script>
+</body>
+
+</html>
